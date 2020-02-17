@@ -1,9 +1,9 @@
 export default class Todo {
   constructor(data) {
-    this._id = data._id || ""
+    this._id = data._id
     this.completed = data.complted || false
-    this.user = data.user || ""
-    this.description = data.description || ""
+    this.user = data.user
+    this.description = data.description
   }
 
   get tTemplate() {
