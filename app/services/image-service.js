@@ -1,14 +1,11 @@
 import store from "../store.js"
 import Background from "../models/background.js"
 
-
 // @ts-ignore
 const imgApi = axios.create({
   baseURL: "//bcw-sandbox.herokuapp.com/api/images",
   timeout: 8000
 });
-
-//TODO create methods to retrieve data trigger the update window when it is complete
 class ImageService {
 
   getImage() {
