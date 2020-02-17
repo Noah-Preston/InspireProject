@@ -1,0 +1,10 @@
+#todo-error{
+  color: red;
+  font-size: 2em;
+}
+
+body {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
