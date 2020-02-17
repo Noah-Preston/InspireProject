@@ -8,7 +8,7 @@ export default class Todo {
 
   get tTemplate() {
     return `
-    <li class="mt-2 text-center text-dark bg-info">${this.btn}   ${this.description} <button class="btn btn-sm btn-danger" onclick="app.todoController.removeTodo('${this._id}')">X</button></li>
+    <li class="mt-2 text-center text-dark">${this.btn}   ${this.description} <button class="btn btn-sm btn-danger" onclick="app.todoController.removeTodo('${this._id}')">X</button></li>
     `
   }
 
