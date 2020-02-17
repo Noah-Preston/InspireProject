@@ -16,7 +16,7 @@ export default class Todo {
   get btn() {
     if (this.completed === true) {
       return `
-      <button class="btn btn-sm btn-success" onclick="app.todoController.changeStatus('${this._id}')">√</button>
+      <button class="btn btn-sm btn-dark" onclick="app.todoController.changeStatus('${this._id}')">√</button>
       `
     } else if (this.completed === false)
       return `
