@@ -1,16 +1,14 @@
 import TodoService from "../services/todo-service.js";
 import store from "../store.js";
-import Todo from "../models/todos.js";
 
 function _drawTodos() {
   let myTodos = store.State.todos
-  let todoElem = document.getElementById("todo-list")
   let template = ""
   myTodos.forEach(x => {
     template += x.tTemplate
   })
   template += `<li class="bg-light text-dark text-center list-group-item mt-1">Todos: ${store.State.todos.length} </li>`
-  todoElem.innerHTML = template
+  document.getElementById("todo-list").innerHTML = template
 }
 
 export default class TodoController {
